@@ -1,5 +1,5 @@
 //Desafio bootcamp Launchbase
-// 4º desafio fase 02 - Aplicação: operações bancárias 
+// 4º desafio modulo 1 - Aplicação: operações bancárias 
 
 const user = {
     name: "Thauany",
