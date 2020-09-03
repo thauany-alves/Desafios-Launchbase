@@ -1,4 +1,9 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+:root{
+    --color-green: #50fa7b;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,14 +20,18 @@ header{
     border-bottom: 1px solid #333;
     background-color: rgba(0,0,0,0.1);
 }
-header div a{
+.links {
+    text-align: center;
+}
+
+.links a{
     padding: 0 15px ;
     text-decoration: none;
     color: aliceblue;
     font-size: 18px;
 }
-header div a:hover{
-    color: #50fa7b;
+.links a:hover{
+    color: var(--color-green);
     transition: color 250ms;
 }
 
@@ -35,9 +44,48 @@ header div a:hover{
 }
 
 #wrapper img {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    border: 5px solid #50fa7b ;
+    border: 5px solid var(--color-green) ;
     margin-bottom: 32px;
+}
+
+#wrapper h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+
+}
+
+#wrapper h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 28px;
+    opacity: 0.8;
+}
+
+#wrapper p{
+    max-width: 600px;
+    margin: 32px auto;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+#wrapper ul{
+    list-style: none;
+    font-size: 22px;
+    line-height: 34px;
+    opacity: 0.8;
+}
+
+#links-footer{
+    margin-bottom: 32px;
+}
+
+#links-footer a{
+    padding: 0;
+    margin-left: 18px;
+    border-bottom: 1px solid var(--color-green)
 }
