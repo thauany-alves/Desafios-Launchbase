@@ -152,9 +152,8 @@ header {
     background-color: white;
     width: 90%;
     height: 90%;
-    /*Usar unidade vh é o 
-    mesmo que dizer visão
-     da altura*/
+    /*unidade vh = visão da altura
+    o legal de usar o vh é que ele se adapta ao tamanho da altura */
     margin: 5vh auto;
     position: relative;
 }
