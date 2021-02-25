@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    {% block head %}
+      <title>Thauany Alves</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/portfolio">Class</a>
+        <!-- <a href="./posts.html">Conteúdos</a> -->
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+  </body>
+
+</html>
