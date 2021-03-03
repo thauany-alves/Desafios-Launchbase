@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="400px" />
+    <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="200px" />
 </h1>
 
 <h3 align="center">
@@ -13,7 +13,7 @@
 <p align="center">
   <a href="## Modulo 01">Modulo 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="## Modulo 02">Modulo 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="## Modulo 03">Modulo 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+  <a href="## Modulo 03">Modulo 03</a> 
 </p>
 
 ## Modulo 01
@@ -34,14 +34,12 @@
 - [Instruções](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md)
 - [Página de posts](https://github.com/thauany-alves/Desafios-Launchbase/tree/master/Fase-02/Modulo-02/posts.html)
 
-#### Foodfy - Desafio final módulo 02
-- [Instruções](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
-- [Foodfy](https://github.com/thauany-alves/foodfy)
+#### :fork_and_knife: Foodfy - Desafio módulo 02
+[Instruções](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md) | [Repositório](https://github.com/thauany-alves/foodfy)
 <img src="https://github.com/thauany-alves/foodfy/blob/main/public/images/Pagina_receitas.png" height="200" width="400">
 
 ## Modulo 03 - Iniciando no Back-end
--[Instruções](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03)
--[Projeto](https://github.com/thauany-alves/Desafios-Launchbase/tree/master/Fase-02/Modulo-03)
+[Instruções](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03) |  [Projeto](https://github.com/thauany-alves/Desafios-Launchbase/tree/master/Fase-02/Modulo-03)
 
 <p align="conter">
   Desenvolvido por Thauany Alves sob orientação dos desafios 
