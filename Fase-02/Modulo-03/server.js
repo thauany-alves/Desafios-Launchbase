@@ -45,6 +45,10 @@ server.get("/video", function (req, res) {
   return res.render("video", { item: video });
 })
 
+server.use(function(req, res) {
+  res.status(404).render("not-found");
+});
+
 server.listen(3000, function () {
   console.log('server is runing');
 });
