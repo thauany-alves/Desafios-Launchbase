@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Thau",
+      "avatar_url": "http://www.google.com",
+      "birth": 1078963200000,
+      "gender": "F",
+      "services": "Musculação, Crossfit",
+      "created_at": 1615508145569
+    },
+    {
+      "id": 2,
+      "name": "João",
+      "avatar_url": "http://www.google.com",
+      "birth": 1078963200000,
+      "gender": "M",
+      "services": "Musculação, Crossfit",
+      "created_at": 1615508163695
+    }
+  ]
+}
