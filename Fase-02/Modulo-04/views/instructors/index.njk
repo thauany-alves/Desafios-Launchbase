@@ -1,8 +1,8 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-  <div class="card">
-    <section 
+  <div class="card table-container">
+    {# <section 
       class="avatar"
       style="background: url(https://source.unsplash.com/collection/3621148/500x500) no-repeat center center / cover"
     >
@@ -37,7 +37,28 @@
         <div>02/01/2019</div>
       </div>
       
-    </section>
+    </section> #}
+
+
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Instrutor</th>
+          <th>Atendimento</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for instructor in instructors %}
+          <tr>
+            <td>{{instructor.name}}</td>
+            <td>{{instructor.services}}</td>
+            <td><a href="/instructors/{{instructor.id}}">Ver</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
   
 {% endblock %}
