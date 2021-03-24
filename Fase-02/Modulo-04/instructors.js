@@ -93,7 +93,8 @@ exports.put = function(req, res){
   const instructor = {
     ...foundInstructor,
     ...req.body,
-    birth: Date.parse(req.body.birth)   
+    birth: Date.parse(req.body.birth),
+    id: Number(req.body.id),   
   }
 
   const index  = data.instructors.indexOf(foundInstructor);
