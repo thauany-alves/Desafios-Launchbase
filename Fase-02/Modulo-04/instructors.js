@@ -67,14 +67,58 @@ exports.update = function (req, res){
   
   if(!foundInstructor) return res.send("Instructor not found");
 
-  
-
   const instructor = {
     ...foundInstructor,
     birth: date(foundInstructor.birth),
         
   }
+ 
   return res.render("instructors/edit", instructor);
 }
 
+//put 
+exports.put = function(req, res){
+  const {id} = req.body;
+  const foundInstructor = data.instructors
+    .find(instructor => instructor.id == id);
+  
+  if(!foundInstructor) return res.send("Instructor not found");
+
+  const instructor = {
+    ...foundInstructor,
+    ...req.body,
+    birth: Date.parse(req.body.birth)   
+  }
+
+  const index  = data.instructors.indexOf(foundInstructor);
+  data.instructors[index] = instructor;
+
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
+    if(err) return res.send("Write error ...")
+
+    return res.redirect(`/instructors/${id}`);
+  })
+}
+
 //delete
+exports.delete = function(req, res){
+  
+  const { id } = req.body;
+  
+  const filteredInstructors = data.instructors.filter(function(instructor){
+    return instructor.id != id
+  });
+
+  console.log('Delete data atual: ',filteredInstructors);
+  
+  data.instructors = filteredInstructors;
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+    if(err) return res.send("Write file error");
+
+    return res.redirect("/instructors");
+  })
+
+  // return res.redirect("/instructors");
+
+}

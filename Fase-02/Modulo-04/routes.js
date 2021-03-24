@@ -21,7 +21,9 @@ routes.get("/instructors/:id", instructors.show);
 
 routes.get("/instructors/:id/edit", instructors.update);
 
-routes.put("")
+routes.put("/instructors", instructors.put);
+
+routes.delete("/instructors", instructors.delete);
 
 routes.get("/members", function (req, res) {
   return res.send("members");
