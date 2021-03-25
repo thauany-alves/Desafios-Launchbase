@@ -229,7 +229,8 @@ tbody tr td:first-child span{
   border: 2px solid white;
 }
 
-tbody tr td:last-child a{
+tbody tr td:last-child a,
+.table-container > a{
   padding: 8px 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -237,6 +238,12 @@ tbody tr td:last-child a{
   font-size: 14px;
   border-radius: 4px;
   background-color: var(--color-purple);
+
+}
+
+.table-container > a{
+  margin-bottom: 16px;
+  display: inline-block;
 
 }
 
@@ -277,9 +284,7 @@ td:last-child{
 .not-found-info{
     font-weight: 500;
     font-size: 24px;
-
     padding: 20px;
-
 }
 
 .not-found-info p{
