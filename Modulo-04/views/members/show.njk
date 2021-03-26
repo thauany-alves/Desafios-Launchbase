@@ -10,8 +10,13 @@
     <section class="details">
       <h3>Detalhes</h3>
       <div class="item">
-        <div>Instrutor</div>
+        <div>Membro</div>
         <div>{{name}}</div>
+      </div>
+
+      <div class="item">
+        <div>Email</div>
+        <div>{{email}}</div>
       </div>
 
       <div class="item">
@@ -25,21 +30,21 @@
       </div>
 
       <div class="item">
-        <div>Acompanhamento</div>
-        <div>
-          {% for service in services %}
-            <span>{{service}}</span>
-          {% endfor %}
-        
-        </div>
+        <div>Tipo sanguíneo</div>
+        <div>{{blood}}</div>
       </div>
 
       <div class="item">
-        <div>Desde</div>
-        <div>{{created_at}}</div>
+        <div>Peso</div>
+        <div>{{weight}}</div>
       </div>
 
-      <a href="/instructors/{{id}}/edit" class="button">Editar</a>
+      <div class="item">
+        <div>Altura</div>
+        <div>{{height}}</div>
+      </div>
+
+      <a href="/members/{{id}}/edit" class="button">Editar</a>
       
     </section>
   </div>

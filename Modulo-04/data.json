@@ -1,5 +1,26 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": 1,
+      "name": "Thauany",
+      "avatar_url": "https://th.bing.com/th/id/OIP.ZGh5N9PXJ6kpf03vw1rHGwHaEo?pid=ImgDet&rs=1",
+      "birth": 982281600000,
+      "gender": "F",
+      "created_at": 1616722301428
+    },
+    {
+      "avatar_url": "https://th.bing.com/th/id/OIP.zxm0MZPR5vhgoNi8QfVmlQHaHa?pid=ImgDet&rs=1",
+      "name": "Thauany",
+      "email": "thauanyaraujoalves@hotmail.com",
+      "birth": 1615161600000,
+      "gender": "F",
+      "blood": "A1",
+      "weight": "62",
+      "height": "160",
+      "id": 2,
+      "created_at": 1616726614432
+    }
+  ],
   "instructors": [
     {
       "id": "1",
