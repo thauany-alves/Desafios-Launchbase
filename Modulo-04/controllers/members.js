@@ -20,6 +20,7 @@ exports.show = function(req, res){
     const member = {
       ...foundMember,
       age: age(foundMember.birth),
+      birth: date(foundMember.birth).birthDay,
       // created_at: new Intl.DateTimeFormat("pt-BR").format(foundMember.created_at),
     } 
   return res.render("members/show", member);
@@ -73,7 +74,7 @@ exports.update = function (req, res){
 
   const member = {
     ...foundMember,
-    birth: date(foundMember.birth),
+    birth: date(foundMember.birth).iso,
         
   }
  
